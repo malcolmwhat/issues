@@ -1,24 +1,9 @@
 # Issues
 
-**TODO: Add description**
+My code for the `Organizing a Project` section of the book `Programming Elixir`.
 
-## Installation
+Much of it is pretty much copied (although not copy pasted) from the book.
+The point was to go through the motions of creating and organizing a project,
+and not necessarily to do anything crazy or outside the box.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `issues` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:issues, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `issues` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:issues]]
-    end
-    ```
-
+Credit for the actual implementation goes to Dave Thomas, the author of the book. 
