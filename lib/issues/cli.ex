@@ -55,6 +55,7 @@ defmodule Issues.CLI do
     |> convert_to_list_of_maps
     |> sort_into_ascending_order
     |> Enum.take(count)
+    |> Issues.TableFormatter.print
   end
 
   def decode_response({ :ok, body }), do: body
