@@ -8,7 +8,10 @@ defmodule Issues.Mixfile do
       elixir: "~> 1.3",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps()]
+      name: "Issues",
+      source_url: "https://github.com/malcolmwhat/issues",
+      deps: deps()
+    ]
   end
 
   # Configuration for the OTP application
@@ -30,7 +33,9 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       httpoison: "~> 0.9.0",
-      poison:    "~> 2.2.0"
+      poison:    "~> 2.2.0",
+      ex_doc:    "~> 0.12.0",
+      earmark:   "~> 0.2"
     ]
   end
 
